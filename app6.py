@@ -49,7 +49,7 @@ def main(bot,update):
       else:
             bot.message.reply_text('invalid')
 
-BOT_TOKEN - os.getenv('bot_token')  
+BOT_TOKEN - os.getenv('BOT_TOKEN')  
 u = Updater(BOT_TOKEN,use_context = True) 
 dp = u.dispatcher
 dp.add_handler(MessageHandler(Filters.text,main)) 
